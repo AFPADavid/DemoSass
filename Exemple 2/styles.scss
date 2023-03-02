@@ -1,0 +1,29 @@
+// définition de variables
+$couleur-principale: #1abc9c;
+$couleur-secondaire: #f1c40f;
+
+// définition d'une mixin
+@mixin centrage-absolu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// utilisation de la mixin
+.conteneur {
+  background-color: $couleur-principale;
+  color: $couleur-secondaire;
+  width: 400px;
+  height: 400px;
+  @include centrage-absolu;
+}
+
+// utilisation de la directive @if
+.article {
+  @if $couleur-secondaire == #f1c40f {
+    background-color: #fff;
+  } @else {
+    background-color: $couleur-secondaire;
+  }
+}

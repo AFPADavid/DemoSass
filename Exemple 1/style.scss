@@ -1,0 +1,98 @@
+// Définir des variables pour les couleurs
+$primary-color: #3498db;
+$secondary-color: #e74c3c;
+
+// Définir les styles pour le bloc d'en-tête
+.header {
+	background-color: $primary-color;
+	color: white;
+	padding: 1em;
+
+	// Définir les styles pour l'élément titre
+	&__title {
+		margin: 0;
+		font-size: 2em;
+	}
+
+	// Définir les styles pour l'élément de navigation
+	&__nav {
+		// Définir les styles pour la liste d'éléments
+		&__list {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			// Définir les styles pour chaque élément de la liste
+			&__item {
+				display: inline-block;
+				margin-right: 1em;
+
+				// Définir les styles pour le lien dans chaque élément
+				&__link {
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+// Définir les styles pour le bloc principal
+.main {
+	padding: 1em;
+
+	// Définir les styles pour chaque section
+	&__section {
+		padding: 1em;
+
+	// Définir les styles pour l'élément titre
+	&__title {
+		color: $secondary-color;
+	}
+
+	// Définir les styles pour l'élément de texte
+	&__text {
+		margin-bottom: 1em;
+	}
+
+	// Définir les styles pour la liste d'éléments
+	&__list {
+		list-style: disc;
+
+		// Définir les styles pour chaque élément de la liste
+		&__item {
+			margin-bottom: 0.5em;
+		}
+	}
+
+	// Modifier les styles pour une section alternative
+	&--alternate {
+		background-color: $secondary-color;
+
+		&__title {
+			color: white;
+		}
+
+		&__text {
+			color: white;
+		}
+
+		&__list {
+			color: white;
+
+			&__item {
+				color: white;
+			}
+		}
+	}
+}
+
+}
+
+// Définir les styles pour le bloc de pied de page
+.footer {
+background-color: $primary-color;
+color: white;
+padding: 1em;
+text-align: center;
+}

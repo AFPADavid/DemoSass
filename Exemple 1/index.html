@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ma page HTML avec Sass et BEM</title>
+	<!-- Lien vers le fichier CSS généré à partir du code Sass -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<h1 class="header__title">Ma page HTML avec Sass et BEM</h1>
+		<nav class="header__nav">
+			<ul class="header__nav__list">
+				<li class="header__nav__list__item"><a class="header__nav__list__item__link" href="#">Accueil</a></li>
+				<li class="header__nav__list__item"><a class="header__nav__list__item__link" href="#">À propos</a></li>
+				<li class="header__nav__list__item"><a class="header__nav__list__item__link" href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="main">
+		<section class="main__section">
+			<h2 class="main__section__title">Section 1</h2>
+			<p class="main_section__text">Cette section contient du texte.</p>
+		</section>
+		<section class="main__section main__section--alternate">
+			<h2 class="main__section--alternate__title">Section 2</h2>
+			<p class="main__section--alternate__text">Cette section contient une liste.</p>
+			<ul class="main__section--alternate__list">
+				<li class="main__section--alternate__list__item">Élément 1</li>
+				<li class="main__section--alternate__list__item">Élément 2</li>
+				<li class="main__section--alternate__list__item">Élément 3</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<p class="footer__text">Copyright © 2023</p>
+	</footer>
+
+	<!-- Lien vers le script JS -->
+	<script src="script.js"></script>
+</body>
+</html>
